@@ -3,15 +3,15 @@
 > For example, I am using Google OAuth only
 
 ### Motivation
-If we want to use our dedicated backend API server and multiple client-side application. In this case, using OAuth is hard to manage.
-Without using any third-party service or providers, It is good to have the control without some black-boxes. 
+Suppose we want to use our dedicated backend API server and multiple client-side applications. In this case, using OAuth is hard to manage.
+Without using any third-party service or providers, It is good to have control without some black boxes. 
 
 
 ### Workflow
-The backend part could be any other backend/full-stack framework instead of `express.js`. But, the role of backend (api) server is the same.
+The backend part could be any other backend/full-stack framework instead of `express.js`. But, the role of the backend (API) server is the same.
 
 **Client Side**
-Imagine, we are using a React (or Next.js) or Vue (or Nuxt.js) or Angular or Svelte app. It can be SPA only or SSR or anything else. Whatever it is, the role is still the `Client-Side or Client-App`.
+Imagine using a React (or Next.js), Vue (or Nuxt.js), or Angular or Svelte app. It can be SPA-only or SSR or anything else. Whatever it is, the role is still the `Client-Side or Client-App`.
 
 So, the client apps will be configured with Google credentials as requirements. Make sure you have,
 ```env
@@ -88,10 +88,10 @@ const { GOOGLE_CLIENT_ID, GOOGLE_CLIENT_SECRET, GOOGLE_REDIRECT_URI } = process.
     3. Custom: use user-details from userResponse & make your own JWT tokens or session, etc.
   */
 
- // Even, you can store the OAuth response for furthur usages.
+ // Even, you can store the OAuth response for further usages.
 ```
 
-NOTE: We only used the GOOGLE's OAuth v2 scopes for easy authentication. But If you want you can get more information or other services i.e. youtube, cloud, drive, mail, etc.
+NOTE: We only used GOOGLE's OAuth v2 scopes for easy authentication. But If you want you can get more information or other services i.e. YouTube, cloud, drive, mail, etc.
 
 
 Thanks if you read it all! :smile:
